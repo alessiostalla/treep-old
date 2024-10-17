@@ -33,10 +33,6 @@
 (define-abstraction quote +symbol-quote+ ()
   ((form :initarg :form :reader quoted-form)))
 
-(defmethod transform (transformer (form quote) environment)
-  (declare (ignore transformer))
-  (values (quoted-form form) environment))
-
 (define-abstraction seq +symbol-seq+ ()
   ((elements :initarg :elements :accessor seq-elements :initform (fset:seq) :slot-name +symbol-seq-elements+)))
 

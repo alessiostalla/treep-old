@@ -84,8 +84,6 @@
 	   (if (slot-boundp instance name)
 	       (init-subform instance name (cl:slot-value instance name)))))) ;;TODO lists of children
 
-(defgeneric transform (transformer form environment))
-
 #|TODO move/redo
 (defclass constant (form)
   ((value :initarg :value :reader constant-value)))
