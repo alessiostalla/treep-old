@@ -1,3 +1,5 @@
+**Note** this has been superseded by https://github.com/alessiostalla/treep
+
 # Treep
 
 Treep is an (Abstract Syntax) Tree-Processing language. It aims to be the core of a "language workbench" type of application, to aid in the implementation of: 
